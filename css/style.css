@@ -1,0 +1,250 @@
+/*头部样式*/
+header{
+	width: 100%; 
+}
+header .login-wrapper{
+	width: 100%;
+	background-color: #333333;
+}
+header .login{
+	width: 1090px;
+	margin: 0 auto;
+	line-height: 36px;	
+}
+.login-left{
+	color: #cccccc;
+	width: 400px;
+	display: inline-block;
+}
+.login-left img{
+	width: 24px;
+	height: 22px;
+	padding-left: 30px;
+	vertical-align: middle;
+}
+.login-left a{
+	color: #b4a078;
+	text-decoration: underline;
+}
+.login a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.login-right{
+	float: right;
+	width: 460px;
+}
+.login-right .first-ul{
+	display:flex;
+	justify-content: space-between;
+	position: relative;
+}
+.login-right .first-ul li:nth-child(1){
+	margin-right: 10px;
+}
+.login-right .first-ul li:nth-child(1):before,
+.login-right .first-ul li:nth-child(2):before{
+	display: none;
+}
+.login-right .first-ul > li:before{
+	content: '';
+	display: inline-block;
+	margin-right: 10px;
+	height: 16px;
+	border-left: 1px solid #5c5c5c;
+	vertical-align: middle;
+}
+.login-right li:nth-child(7):hover .second-ul{
+	display: block;
+	background-color: #fff;
+}
+.fz{
+	display: inline-block;
+}
+.login-right li:nth-child(7):hover .fz{
+	transform: rotate(180deg);
+}
+.second-ul{
+	display: none;
+	box-shadow: 1px 1px 5px #ccc;
+	text-align: center;
+}
+.second-ul ul li a{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.second-ul ul li a:hover{
+	color: #b4a078;
+}
+.login-right li:nth-child(8) .qcode{
+	display: none;
+}
+.login-right li:nth-child(8):hover .qcode{
+	display: block;
+}
+.icon-shangjiantou{
+	color: #b4a078;
+	vertical-align: middle;
+}
+.icon-phone{
+	color: #fff;
+}
+.qcode{
+	display: block;
+	background-color: #fff;
+	position: absolute;
+	right: -30px;
+}
+.qcode img{
+	width: 117px;
+	height: 117px;
+}
+nav{
+	width: 100%;
+}
+nav .nav-wrapper{
+	width: 1090px;
+	margin: 0 auto;
+	height: 204px;
+	position: relative;
+}
+nav .logo img{
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -140px;
+	margin-top: -70px;
+}
+nav .logo a:hover{
+	cursor: pointer;
+}
+nav .search{
+	width: 400px;
+	position: relative;
+	left: 755px;
+	top: 75px;
+	z-index: -1;
+}
+nav .search input{
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	border: 0;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+	border-bottom: 1px solid #D8CEBC;
+	font-size: 12px;
+	width: 249px;
+	outline: 0;
+	overflow: hidden;
+}
+nav .search i{
+	position: relative;
+	left: 249px;
+	bottom: 30px;
+	padding-right: 15px;
+	font-size: 20px;
+	color: #c6b698;
+}
+nav .search i:last-child{
+	font-size: 24px;
+}
+nav .search i:hover{
+	cursor: pointer;
+	color: #b4a078;
+}
+.nav .nav-ul{
+	width: 1090px;
+	margin-left: 23px;
+	display: flex;
+	justify-content: flex-start;
+	position: absolute;
+	top: 156px;
+
+}
+.nav-ul li{
+	padding-right: 48px;
+}
+.nav-ul li a{
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.nav-ul li:first-of-type a{
+	color: #b4a078;
+	border-bottom: 3px solid #b4a078;
+}
+/*--------------------------------*/
+
+.container .banner{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.banner-wrapper{
+	display: flex;
+	justify-content: center;
+	width: 1263px;
+	margin: 0 auto;
+	border-top: 1px solid #ccc;	
+	overflow: hidden;
+}
+.banner-wrapper img{
+	width: 1920px;
+	height: 420px;
+}
+.brand-maker{
+	width: 1090px;
+	margin:30px auto;
+}
+.brand-maker p a{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1;
+	float: left;
+	margin-right: 20px;
+	color: #222;
+}
+.brand-text{
+	margin-bottom: 18px;
+}
+.brand-text span{
+	padding-top: 13px;
+	display: inline-block;
+	line-height: 1;
+	font-size: 14px;
+}
+.brand-text span:last-of-type{
+	padding-top: 13px;
+	display: inline-block;
+	line-height: 1;
+	float: right;
+}
+.brand-img{
+	display: flex;
+}
+.brand-img div{
+	width: 357px;
+	height: 320px;
+	overflow: hidden;
+}
+.brand-img img{
+	transition: all 1s;
+}
+.brand-img img:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.brand-img  div{
+	margin-right: 8px;
+}
+.small-img div{
+	width: 357px;
+	height: 155px; 
+}
+.small-img div:first-child{
+	margin-bottom: 10px;
+}
