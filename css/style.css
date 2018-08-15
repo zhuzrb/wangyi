@@ -339,6 +339,7 @@ nav .search i:hover{
 .nav-ul > li:hover .ul-wrapper{
 	display: block;
 	position: absolute;
+	top: 220px;
 	left: 0;
 	right: 0;
 	z-index: 900;
@@ -590,6 +591,9 @@ nav .search i:hover{
 	display: flex;
 	justify-content: space-between;
 }
+.new-ul > li:hover{
+	background-color: #f4f0ea;
+}
 .new-ul > li > img:nth-child(2n) {
 	position: relative;
 	top: -269px;
@@ -601,7 +605,11 @@ nav .search i:hover{
 }
 .new-ul li{
 	text-align: center;
-	height: 320px;
+	height: 360px;
+	width: 265px;
+}
+.new-ul > li:hover{
+	background-color: #f4f0ea;
 }
 .new-ul li .little-text{
 	position: relative;
@@ -684,7 +692,7 @@ nav .search i:hover{
 .recommend-wrapper ul li:nth-child(1) .detial-text p{
 	background-color: #f28f2d;
 	color: #fff;
-	width: 24px;
+	width: 40px;
 	padding: 2px 5px;
 	position: relative;
 	top: 20px;
@@ -732,7 +740,7 @@ nav .search i:hover{
 .recommend-wrapper ul .detial-text p{
 	background-color: #f28f2d;
 	color: #fff;
-	width: 24px;
+	width: 40px;
 	padding: 2px 5px;
 	position: relative;
 	top: 8px;
