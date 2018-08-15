@@ -1,3 +1,144 @@
+
+/*遮罩*/
+#box {
+	display: none;
+	position: fixed;
+	z-index: 9998;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+/*登录框*/
+#login {
+	display: none;
+	position: fixed;
+	top: 65px;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
+.wrap{
+	width: 420px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.wrap .cha a{
+	font-size: 40px;
+	position: relative;
+	left: 370px;
+}
+/*登录框文字*/
+.top-text{
+	width: 350px;
+	font-size: 18px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 28px;
+}
+.top-text .line{
+	display: inline-block;
+	width: 1px;
+	height: 16px;
+	margin: 0 36px;
+	margin-bottom: -4px;
+	border-right: 1px solid #e8e8e8;
+}
+.top-text span:first-child{
+	color: #999;
+}
+.top-text span:first-child:hover{
+	color: #B4A078;
+	cursor: pointer;
+}
+.top-text span:last-child:hover{
+	cursor: pointer;
+}
+.input-box {
+	margin: 0 auto;
+	width: 360px;
+	color: #e8e8e8;
+}
+.form-user,
+.form-lock {
+	height: 28px;
+	margin: 14px 0;
+	padding: 14px;
+	position: relative;
+	border: 1px solid #e8e8e8;
+}
+.form-user i,.form-lock i{
+	font-size: 20px;
+	color: #e8e8e8;
+	padding-right: 8px;
+}
+.form-user > li:nth-child(1),
+.form-lock > li:nth-child(1) {
+	float: left;
+	width: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-right: 1px solid #e8e8e8;
+}
+.form-user > li:nth-child(2),
+.form-lock > li:nth-child(2) {
+	width: 100%;
+	line-height: 28px;
+}
+.form-user > li:nth-child(2) > input,
+.form-lock > li:nth-child(2) > input {
+	width: 80%;
+	padding-left: 28px;
+	border:none;
+}
+.form-user > li:nth-child(2) > input:focus + .close,
+.form-lock > li:nth-child(2) > input:focus + .close {
+	display: block;
+}
+.close {
+	position: absolute;
+	top: 1em; right: .5em;
+	display: none;
+}
+/*登录按钮*/
+.wrap .btn{
+	display: block;
+	width: 320px;
+	height: 48px;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	background: #b4a078;
+	font-size: 18px;
+	line-height: 48px;
+	border-radius: 2px;
+	margin: 40px auto;
+	
+}
+/*快捷方式登录*/
+.kjdl{
+	width: 100%;
+	height: 60px;
+	background-color: #F5F3EF;
+	line-height: 60px;
+	color: #999;
+}
+.kjdl i:hover,.kjdl span:hover{
+	cursor: pointer;
+	color: #b4a078;
+}
+.kjdl span:first-of-type{
+	margin-left: 60px;
+	padding-right: 10px;
+}
+.kjdl .tubiao{
+	margin-left: 30px;
+	display: inline-block;
+}
+.kjdl i{
+	color: #666;
+	font-size: 24px;
+	padding: 8px;
+}
 /*头部样式*/
 header{
 	width: 100%; 
@@ -200,7 +341,7 @@ nav .search i:hover{
 	position: absolute;
 	left: 0;
 	right: 0;
-	z-index: 999;
+	z-index: 900;
 	background-color: #fff;
 }
 .ul-wrapper ul li:hover{
