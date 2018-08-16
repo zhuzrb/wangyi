@@ -2074,18 +2074,32 @@ ul.list li:active{
 .talking-wrapper ul li{
 	margin-right: 10px;
 	position: relative;
-	animation: move 10s ease-in-out infinite reverse;
-	animation-delay: 2s;
+	animation: move 8s infinite alternate;
 }	
 @keyframes move{
-		0%,100%{
+		0%{
 			transform: translateX(0px);
 		}
-		25%,75%{
+		25%{
+			transform: translateX(0px);
+		}
+		30%{
 			transform: translateX(-365px);
 		}
-		50%{
+		55%{
+			transform: translateX(-365px);
+		}
+		60%{
 			transform: translateX(-730px);
+		}
+		85%{
+			transform: translateX(-730px);
+		}
+		90%{
+			transform: translateX(-1095px);
+		}
+		100%{
+			transform: translateX(-1095px);
 		}
 }
 .talking-wrapper li img{
@@ -2101,7 +2115,8 @@ ul.list li:active{
 .talking-wrapper .text2,
 .talking-wrapper .text3,
 .talking-wrapper .text4,
-.talking-wrapper .text5{
+.talking-wrapper .text5,
+.talking-wrapper .text6{
 	width: 315px;
 	height: 170px;
 	background-color: #fff;
@@ -2137,6 +2152,12 @@ ul.list li:active{
 	left: 1465px;
 	z-index: 3;
 }
+.talking-wrapper .text6{
+	position: relative;
+	top: -1060px;
+	left: 1830px;
+	z-index: 3;
+}
 .talking-wrapper .text {
 	overflow: hidden;
 	position: relative;
@@ -2144,20 +2165,8 @@ ul.list li:active{
 	height: 200px;
 }
 .talking-wrapper .text div{
-	animation: mymove 10s ease-in-out infinite reverse;
-	animation-delay: 2s;
+	animation: move 8s  infinite alternate;
 }	
-@keyframes mymove{
-		0%,100%{
-			transform: translateX(0px);
-		}
-		25%,75%{
-			transform: translateX(-365px);
-		}
-		50%{
-			transform: translateX(-730px);
-		}
-}
 .talking-wrapper .text p{
 	color: #999;
 	font-size: 14px;
