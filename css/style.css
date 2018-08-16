@@ -205,6 +205,20 @@ header .login{
 .login-right li:nth-child(7):hover .fz{
 	transform: rotate(180deg);
 }
+ @keyframes faded {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+.fadeIn {
+    animation-name: faded;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
 .small-ul{
 	display: none;
 	position: relative;
@@ -362,9 +376,9 @@ nav .search i:hover{
 .container .banner{
 	width: 100%;
 	background-color: #f5f5f5;
-	overflow: hidden;
 	position: relative;
 	height: 420px;
+	overflow: hidden;
 }
 .banner-wrapper{
 	width: 1920px;
@@ -372,20 +386,120 @@ nav .search i:hover{
 	position: absolute;
 	left: 50%;
 	margin-left: -960px;
-	animation: fade 32s linear infinite;
+	overflow: hidden;
+}
+.banner-wrapper ul.move{
+	display: flex;
+	animation:fade 32s linear infinite;
+}
+@keyframes fade{
+	0%{
+		transform: translate(0,0);
+	}
+	8%{
+		transform: translate(0,0);
+	}
+	13%{
+		transform: translate(-1920px);
+	}
+	21%{
+		transform: translate(-1920px);
+	}
+	26%{
+		transform: translate(-3840px);
+	}
+	34%{
+		transform: translate(-3840px);
+	}
+	39%{
+		transform: translate(-5760px);
+	}
+	47%{
+		transform: translate(-5760px);
+	}
+	53%{
+		transform: translate(-7680px);
+	}
+	61%{
+		transform: translate(-7680px);
+	}
+	66%{
+		transform: translate(-9600px);
+	}
+	74%{
+		transform: translate(-9600px);
+	}
+	79%{
+		transform: translate(-11520px);
+	}
+	87%{
+		transform: translate(-11520px);
+	}
+	93%{
+		transform: translate(-13440px);
+	}
+	100%{
+		transform: translate(-13440px);
+	}
+}
+ul.list{
+	position: absolute;
+	left: 50%;
+	margin-left:-8em;
+	margin-top: 380px;
+	width: 16em;
+	height: 1em;
+	z-index: 99;
+}
+ul.list li{
+	float: left;
+	height: 1em;
+	width: 1em;
+	margin-right: 1em;
+	background-color: #fff;
+	border-radius: 50%;
+}
+ul.list li:hover,
+ul.list li:active{
+	cursor: pointer;
+	box-shadow: 0 0 0 4px #dfcead;
+	background: #a7936e;
 }
 
-@keyframes fade{
-	0%{background: url(../images/banner/banner-01.jpg);}
-	12.5%{background: url(../images/banner/banner-02.jpg);}
-	25%{background: url(../images/banner/banner-03.jpg);}
-	37.5%{background: url(../images/banner/banner-04.jpg);}
-	50%{background: url(../images/banner/banner-05.jpg);}
-	62.5%{background: url(../images/banner/banner-06.jpg);}
-	75%{background: url(../images/banner/banner-07.jpg);}
-	87.5%{background: url(../images/banner/banner-08.jpg);}
-	100%{background: url(../images/banner/banner-01.jpg);}
+.fa-left{
+	position: absolute;
+	left: 21%;
+	top: 50%;
+	margin-top: -2em;
+	color: #fff;
+	width: 4em;
+	height: 4em;
+	line-height: 5em;
+	background-color: #D0C4AF;
+	z-index: 99;
+	text-align: center;
+	border-radius: 50%;
 }
+.fa-right{
+	position: absolute;
+	right: 21%;
+	top: 50%;
+	margin-top: -2em;
+	color: #fff;
+	width: 4em;
+	height: 4em;
+	line-height: 5em;
+	background-color: #D0C4AF;
+	z-index: 99;
+	text-align: center;
+	border-radius: 50%;
+}
+.fa-left:hover,
+.fa-right:hover{
+	background-color: #B19E7A;
+	cursor: pointer;
+}
+
 /*品牌制造商*/
 .brand-maker{
 	width: 1090px;
@@ -775,10 +889,11 @@ nav .search i:hover{
 .time-wrapper ul li:nth-child(1){
 	width: 224px;
 	height: 377px;
+	animation: change 6s linear infinite;
 }
-.time-wrapper ul li:nth-child(1) img{
-	width: 224px;
-	height: 377px;
+@keyframes change{
+	from{background: url(../images/banner4/banner4-05.png);	background-size: 224px 377px;}
+	to{background: url(../images/banner4/banner4-06.jpg);}
 }
 .time-wrapper ul li img{
 	transition: all 1s;
@@ -821,7 +936,7 @@ nav .search i:hover{
 }
 .time-wrapper ul li{
 	float: left;
-	width: 425px;
+	width: 420px;
 	height: 187px;
 	border: 1px solid #F4F0EA;
 }
@@ -909,7 +1024,7 @@ nav .search i:hover{
 	float: left;
 }
 .welfare-wrapper .welfare-center{
-	width: 620px;
+	width: 623px;
 	height: 376px;
 	background-color: #fff;
 	float: left;
@@ -1023,7 +1138,7 @@ nav .search i:hover{
 .welfare-right{
 	width: 200px;
 	height: 376px;
-	padding: 0 20px 0 23px;
+	padding: 0 20px 0 18px;
 	background-color: #fff;
 	float: right;
 }
