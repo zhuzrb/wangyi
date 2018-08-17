@@ -1,0 +1,157 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+}
+body, textarea, input, button{
+    font: 12px/1.14 "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+    color: #666;
+}
+.wrapper{
+	width: 1020px;
+	margin: 0 auto;
+}
+header{
+	margin: 35px 0;
+	line-height: 60px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+header > a{
+	display: inline-block;
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.header-left{
+	width: 300px;
+	height: 60px;	
+	font-size: 24px;
+	position: relative;
+}
+.header-left i{
+	font-size: 34px;
+	color: #c1252e;
+}
+.header-right {
+	width: 150px;
+	height: 21px;
+	margin-top: 5px;
+}
+.header-right p a{
+	color: #ca5252;
+	cursor: pointer;
+}
+
+.container{
+	width: 1020px;
+	height: 908px;
+	padding-bottom: 55px;
+	background-color: #fff;
+	margin: 0 auto;
+	
+}
+form ul{
+	width: 800px;
+	margin :0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+form ul li input{
+	width: 350px;
+	height: 44px;
+	margin-top: 12px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 5px;
+	line-height: 44px;
+	margin: 15px 0;
+}
+form ul li input:focus{
+	border: 1px solid #a1d1f6;
+}
+input::placeholder{
+	font-size: 14px;
+	font-weight: normal;
+}
+.container form ul li:first-child{
+	width: 320px;
+	margin: 0 auto;
+	padding:44px 0 24px;
+	position: relative;
+}
+.container form ul li:first-child::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.container form ul li:nth-child(4){
+	margin-left: -30px;
+}
+.container form ul li:nth-child(5){
+	margin-left: -15px;
+}
+form ul li button.submit{
+	width: 350px;
+	height: 44px;
+	margin: 30px 0 0 50px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #ca5252;
+	border: none;
+	cursor: pointer;
+}
+form ul li:first-child p:first-child{
+	width: 158px;
+	background-color: #ca5252;
+	border: 1px solid #ccc;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+}
+form ul li:first-child p:last-of-type{
+	width: 158px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+}
+form ul li:first-child span{
+	background-color: #ca5252;
+	color: #fff;
+	padding: 1px;
+	position: absolute;
+	left: 280px;
+	top: 50px;
+	font-size: 8px;
+
+}
+
+footer{
+	width: 1020px;
+	height: 47px;
+	padding: 30px 0;
+	color: #b1b1b1;
+}
+
+footer p{
+	text-align: center;
+	padding-bottom: 10px;
+}
+footer p a {
+ 	padding:0 6px; 
+ 	color: #b1b1b1;
+}
+footer p a:hover{
+	color: #ee8c18;
+}
