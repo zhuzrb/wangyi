@@ -9,241 +9,239 @@
 	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
 	<script>
 		function openme(){
-		document.getElementById('box').style.display='block';
-		document.getElementById('login').style.display='block';
+			document.getElementById('box').style.display='block';
+			document.getElementById('login').style.display='block';
 		}
 		function closeme(){
-		document.getElementById('box').style.display='none';
-		document.getElementById('login').style.display='none';
+			document.getElementById('box').style.display='none';
+			document.getElementById('login').style.display='none';
 		}
 	</script>
 </head>
 <body>
 	<div id="page">
-		<!-- 遮罩 -->
+	<!-- 遮罩 -->
 		<div id="box"></div>
 		<!-- 登录框 -->
 		<div id="login">
 			<div class="wrap">
-			<div class="cha"><a href="#" onClick="closeme()">×</a></div>
-			<div class="top-text">
-			<span>手机号登录</span>
-			<div class="line"></div>
-			<span>邮箱登录</span>
-			</div>
-			<div class="input-box">
-			<ul class="form-user">
-				<li class="form-label">
-					<i class="fa fa-user"></i>
-				</li>
-				<li class="input">
-					<input type="text" placeholder="邮箱账号">
-					<div class="close">
-						<i class="fa fa-close"></i>
+				<div class="cha"><a href="#" onClick="closeme()">×</a></div>
+				<div class="top-text">
+					<span>手机号登录</span>
+					<div class="line"></div>
+					<span>邮箱登录</span>
+				</div>
+				<div class="input-box">
+					<ul class="form-user">
+						<li class="form-label">
+							<i class="fa fa-user"></i>
+						</li>
+						<li class="input">
+							<input type="text" placeholder="邮箱账号">
+							<div class="close">
+								<i class="fa fa-close"></i>
+							</div>
+						</li>
+					</ul>
+					<ul class="form-lock">
+						<li class="form-label">
+							<i class="fa fa-lock"></i>
+						</li>
+						<li class="input">
+							<input type="text" placeholder="请输入密码">
+							<div class="close">
+								<i class="fa fa-close"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btn">
+					登  录
+				</div>
+				<div class="kjdl">
+					<div class="tubiao">
+						<i class="fa fa-weixin"></i>
+						<i class="fa fa-qq"></i>
+						<i class="fa fa-weibo"></i>
+						<i class="iconfont icon-wangyi"></i>
 					</div>
-				</li>
-			</ul>
-			<ul class="form-lock">
-				<li class="form-label">
-					<i class="fa fa-lock"></i>
-				</li>
-				<li class="input">
-					<input type="text" placeholder="请输入密码">
-					<div class="close">
-						<i class="fa fa-close"></i>
-					</div>
-				</li>
-			</ul>
-			</div>
-			<div class="btn">
-				登  录
-			</div>
-			<div class="kjdl">
-			<div class="tubiao">
-			<i class="fa fa-weixin"></i>
-			<i class="fa fa-qq"></i>
-			<i class="fa fa-weibo"></i>
-			<i class="iconfont icon-wangyi"></i>
-			</div>
-			<span><a href="./sign up.html">邮箱注册</a></span>
-			<span>忘记密码？</span>
-			</div>
+					<span><a href="./sign up.html">邮箱注册</a></span>
+					<span>忘记密码？</span>
+				</div>
 			</div>
 		</div>
 		<!-- 页面头部 -->
 		<header>
-			<div class="login-wrapper">
-			<div class="login">	
-				<div class="login-left">
-					<span>好的生活，没那么贵</span>
-					<img src="./images/laba.png" alt="">
-					<a href="#"><span>【严选x中行联名卡】达标领80元礼品卡></span></a>
-				</div>
-				<div class="login-right">
+			<div class="login-box">
+				<div class="login">	
+					<div class="login-left">
+						<span>好的生活，没那么贵</span>
+						<img src="./images/laba.png" alt="">
+						<a href="#"><span>【严选x中行联名卡】达标领80元礼品卡></span></a>
+					</div>
+					<div class="login-right">
 						<ul class="first-ul">
-						<li><a href="#" onClick="openme()">登录</a></li>
-						<li><a href="./sign up.html">注册</a></li>
-						<li><a href="#">我的订单</a></li>
-						<li><a href="#">会员</a></li>
-						<li><a href="#">甄选家</a></li>
-						<li><a href="#">企业采购</a></li>
-						<li><a href="#">客户服务<div class="fz"><i class="iconfont icon-shangjiantou"></i></div></a>
-							<ul class="small-ul fadeIn">
-								<li><a href="#">在线客服</a></li>
-								<li><a href="#">帮助中心</a></li>
-								<li><a href="#">商务合作</a></li>
-								<li><a href="#">开放平台</a></li>
+							<li><a href="#" onClick="openme()">登录</a></li>
+							<li><a href="./sign up.html">注册</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">会员</a></li>
+							<li><a href="#">甄选家</a></li>
+							<li><a href="#">企业采购</a></li>
+							<li><a href="#">客户服务<div class="fz"><i class="iconfont icon-shangjiantou"></i></div></a>
+								<ul class="small-ul fadeIn">
+									<li><a href="#">在线客服</a></li>
+									<li><a href="#">帮助中心</a></li>
+									<li><a href="#">商务合作</a></li>
+									<li><a href="#">开放平台</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="iconfont icon-phone"></i>APP</a>
+								<div class="qcode"><img src="./images/qcode.png" alt=""></div></li>
 							</ul>
-						</li>
-						<li><a href="#"><i class="iconfont icon-phone"></i>APP</a>
-						<div class="qcode"><img src="./images/qcode.png" alt=""></div></li>
-						</ul>
-
+					</div>
 				</div>
-				</div>
-			</div>
-			<nav>
-				<div class="nav-wrapper">
-				<div class="logo">
-					<a href="#">
-					<img src="./images/logo.png" alt=""></a>
-				</div>
-				<div class="search">
-					<input type="text" placeholder=" 轻跃女式跑步袜">
-					<i class="iconfont icon-search"></i>
-					<i class="iconfont icon-cart"></i>
-				</div>
-					<ul class="nav-ul">
-						<li><a href="./index.html">首页</a></li>
-						<li><a href="#">居家</a>
-							<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-居家/jujia1.png" alt=""><p>夏凉</p></li>
-								<li><img src="./images/nav/nav-居家/jujia2.png" alt=""><p>床品件套</p></li>
-								<li><img src="./images/nav/nav-居家/jujia3.png" alt=""><p>被枕</p></li>
-								<li><img src="./images/nav/nav-居家/jujia4.png" alt=""><p>家具</p></li>
-								<li><img src="./images/nav/nav-居家/jujia5.png" alt=""><p>灯具</p></li>
-								<li><img src="./images/nav/nav-居家/jujia6.png" alt=""><p>收纳</p></li>
-								<li><img src="./images/nav/nav-居家/jujia7.png" alt=""><p>布艺软装</p></li>
-								<li><img src="./images/nav/nav-居家/jujia8.png" alt=""><p>家饰</p></li>
-								<li><img src="./images/nav/nav-居家/jujia9.png" alt=""><p>旅行用品</p></li>
-								<li><img src="./images/nav/nav-居家/jujia10.png" alt=""><p>晾晒除味</p></li>
-								<li><img src="./images/nav/nav-居家/jujia11.png" alt=""><p>家庭医疗</p></li>
-								<li><img src="./images/nav/nav-居家/jujia12.png" alt=""><p>宠物</p></li>
-							</ul>
+		    </div>
+					<div class="login-wrapper">
+						<div class="logo">
+							<a href="#">
+							<img src="./images/logo.png" alt=""></a>
 						</div>
-						</li>
-						<li><a href="#">鞋包配饰</a>
-						<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-鞋包/xiebao1.png" alt=""><p>行李箱</p></li>
-								<li><img src="./images/nav/nav-鞋包/xiebao2.png" alt=""><p>女式包袋</p></li><li><img src="./images/nav/nav-鞋包/xiebao3.png" alt=""><p>男式包袋</p></li><li><img src="./images/nav/nav-鞋包/xiebao4.png" alt=""><p>钱包及小皮件</p></li><li><img src="./images/nav/nav-鞋包/xiebao5.png" alt=""><p>女鞋</p></li><li><img src="./images/nav/nav-鞋包/xiebao6.png" alt=""><p>男鞋</p></li><li><img src="./images/nav/nav-鞋包/xiebao7.png" alt=""><p>拖鞋</p></li><li><img src="./images/nav/nav-鞋包/xiebao8.png" alt=""><p>鞋配</p></li><li><img src="./images/nav/nav-鞋包/xiebao9.png" alt=""><p>袜子</p></li><li><img src="./images/nav/nav-鞋包/xiebao10.png" alt=""><p>丝袜</p></li><li><img src="./images/nav/nav-鞋包/xiebao11.png" alt=""><p>配饰</p></li><li><img src="./images/nav/nav-鞋包/xiebao12.png" alt=""><p>眼镜</p></li><li><img src="./images/nav/nav-鞋包/xiebao13.png" alt=""><p>围巾件套</p></li>
-							</ul>
+						<div class="search">
+							<input type="text" placeholder=" 轻跃女式跑步袜">
+							<i class="iconfont icon-search"></i>
+							<i class="iconfont icon-cart"></i>
 						</div>
-						</li>
-						<li><a href="#">服装</a>
-						<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-服装/fuzhuang1.png" alt=""><p>Yessing轻运动</p></li><li><img src="./images/nav/nav-服装/fuzhuang2.png" alt=""><p>T恤</p></li><li><img src="./images/nav/nav-服装/fuzhuang3.png" alt=""><p>运动</p></li><li><img src="./images/nav/nav-服装/fuzhuang4.png" alt=""><p>牛仔</p></li><li><img src="./images/nav/nav-服装/fuzhuang5.png" alt=""><p>女式上装</p></li><li><img src="./images/nav/nav-服装/fuzhuang6.png" alt=""><p>女式外套</p></li><li><img src="./images/nav/nav-服装/fuzhuang7.png" alt=""><p>女式下装</p></li><li><img src="./images/nav/nav-服装/fuzhuang8.png" alt=""><p>男式上装</p></li><li><img src="./images/nav/nav-服装/fuzhuang9.png" alt=""><p>男式下装</p></li><li><img src="./images/nav/nav-服装/fuzhuang10.png" alt=""><p>男式外套</p></li><li><img src="./images/nav/nav-服装/fuzhuang11.png" alt=""><p>男士内衣内裤</p></li><li><img src="./images/nav/nav-服装/fuzhuang12.png" alt=""><p>女士内衣内裤</p></li><li><img src="./images/nav/nav-服装/fuzhuang13.png" alt=""><p>男式家居服</p></li><li><img src="./images/nav/nav-服装/fuzhuang14.png" alt=""><p>女式家居服</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">电器</a>
-								<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-电器/dianqi1.png" alt=""><p>生活电器</p></li><li><img src="./images/nav/nav-电器/dianqi2.png" alt=""><p>厨房电器</p></li><li><img src="./images/nav/nav-电器/dianqi3.png" alt=""><p>个护健康</p></li><li><img src="./images/nav/nav-电器/dianqi4 .png" alt=""><p>数码</p></li><li><img src="./images/nav/nav-电器/dianqi5.png" alt=""><p>影音娱乐</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">洗护</a>
-							<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-洗护/xihu1.png" alt=""><p>纸品湿巾</p></li><li><img src="./images/nav/nav-洗护/xihu2.png" alt=""><p>家庭清洁</p></li><li><img src="./images/nav/nav-洗护/xihu3.png" alt=""><p>生理用品</p></li><li><img src="./images/nav/nav-洗护/xihu4.png" alt=""><p>浴室用具</p></li><li><img src="./images/nav/nav-洗护/xihu5.png" alt=""><p>毛巾</p></li><li><img src="./images/nav/nav-洗护/xihu6.png" alt=""><p>美妆</p></li><li><img src="./images/nav/nav-洗护/xihu7.png" alt=""><p>香氛</p></li><li><img src="./images/nav/nav-洗护/xihu8.png" alt=""><p>面部口腔护理</p></li><li><img src="./images/nav/nav-洗护/xihu9.png" alt=""><p>身体护理</p></li><li><img src="./images/nav/nav-洗护/xihu10.png" alt=""><p>洗发护发</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">饮食</a>
-								<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-饮食/1.png" alt=""><p>甜品鲜花</p></li><li><img src="./images/nav/nav-饮食/2.png" alt=""><p>糕点</p></li><li><img src="./images/nav/nav-饮食/3.png" alt=""><p>小食</p></li><li><img src="./images/nav/nav-饮食/4.png" alt=""><p>坚果炒货</p></li><li><img src="./images/nav/nav-饮食/5.png" alt=""><p>果干</p></li><li><img src="./images/nav/nav-饮食/6.png" alt=""><p>肉类零食</p></li><li><img src="./images/nav/nav-饮食/7.png" alt=""><p>冲饮</p></li><li><img src="./images/nav/nav-饮食/8.png" alt=""><p>茗茶</p></li><li><img src="./images/nav/nav-饮食/9.png" alt=""><p>酒水饮料</p></li><li><img src="./images/nav/nav-饮食/10.png" alt=""><p>方便食品</p></li><li><img src="./images/nav/nav-饮食/11.png" alt=""><p>食材</p></li><li><img src="./images/nav/nav-饮食/12.png" alt=""><p>调味</p></li><li><img src="./images/nav/nav-饮食/13.png" alt=""><p>滋补保健</p></li><li><img src="./images/nav/nav-饮食/14.png" alt=""><p>生鲜</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">餐厨</a>
-								<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-餐厨/1.png" alt=""><p>水具杯壶</p></li><li><img src="./images/nav/nav-餐厨/2.png" alt=""><p>餐具</p></li><li><img src="./images/nav/nav-餐厨/3.png" alt=""><p>锅具</p></li><li><img src="./images/nav/nav-餐厨/4.png" alt=""><p>清洁保鲜</p></li><li><img src="./images/nav/nav-餐厨/5.png" alt=""><p>厨房配件</p></li><li><img src="./images/nav/nav-餐厨/6.png" alt=""><p>刀剪砧板</p></li><li><img src="./images/nav/nav-餐厨/7.png" alt=""><p>茶具咖啡具酒具</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">婴童</a>
-								<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-婴童/1.png" alt=""><p>暑期好物</p></li><li><img src="./images/nav/nav-婴童/2.png" alt=""><p>新生儿服装</p></li><li><img src="./images/nav/nav-婴童/3.png" alt=""><p>小童服装</p></li><li><img src="./images/nav/nav-婴童/4.png" alt=""><p>中大童服装</p></li><li><img src="./images/nav/nav-婴童/5.png" alt=""><p>内衣搭配</p></li><li><img src="./images/nav/nav-婴童/6.png" alt=""><p>童鞋童包</p></li><li><img src="./images/nav/nav-婴童/7.png" alt=""><p>婴童洗护</p></li><li><img src="./images/nav/nav-婴童/8.png" alt=""><p>孕产</p></li><li><img src="./images/nav/nav-婴童/9.png" alt=""><p>寝居</p></li><li><img src="./images/nav/nav-婴童/10.png" alt=""><p>喂养</p></li><li><img src="./images/nav/nav-婴童/11.png" alt=""><p>玩具</p></li><li><img src="./images/nav/nav-婴童/12.png" alt=""><p>婴童出行</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">文体</a>
-								<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-文体/1.png" alt=""><p>文具</p></li><li><img src="./images/nav/nav-文体/2.png" alt=""><p>运动户外</p></li><li><img src="./images/nav/nav-文体/3.png" alt=""><p>唱片</p></li><li><img src="./images/nav/nav-文体/4.png" alt=""><p>礼品卡</p></li><li><img src="./images/nav/nav-文体/5.png" alt=""><p>游戏点卡</p></li><li><img src="./images/nav/nav-文体/6.png" alt=""><p>暴雪周边</p></li><li><img src="./images/nav/nav-文体/7.png" alt=""><p>我的世界</p></li><li><img src="./images/nav/nav-文体/8.png" alt=""><p>梦幻西游</p></li><li><img src="./images/nav/nav-文体/9.png" alt=""><p>大话西游</p></li><li><img src="./images/nav/nav-文体/10.png" alt=""><p>阴阳师</p></li><li><img src="./images/nav/nav-文体/11.png" alt=""><p>游戏表情</p></li><li><img src="./images/nav/nav-文体/12.png" alt=""><p>影视周边</p></li><li><img src="./images/nav/nav-文体/13.png" alt=""><p>动漫电玩</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">特色区</a>
-								<div class="ul-wrapper fadeIn">
-							<ul>
-								<li><img src="./images/nav/nav-特色区/1.png" alt=""><p>日本馆</p></li><li><img src="./images/nav/nav-特色区/2.png" alt=""><p>韩国馆</p></li><li><img src="./images/nav/nav-特色区/3.png" alt=""><p>东南亚馆</p></li><li><img src="./images/nav/nav-特色区/4.png" alt=""><p>欧美馆</p></li><li><img src="./images/nav/nav-特色区/5.png" alt=""><p>澳新馆</p></li><li><img src="./images/nav/nav-特色区/6.png" alt=""><p>智造馆</p></li><li><img src="./images/nav/nav-特色区/7.png" alt=""><p>春风馆</p></li><li><img src="./images/nav/nav-特色区/8.png" alt=""><p>未央馆</p></li><li><img src="./images/nav/nav-特色区/9.png" alt=""><p>云音乐周边馆</p></li><li><img src="./images/nav/nav-特色区/10.png" alt=""><p>Yessing馆</p></li><li><img src="./images/nav/nav-特色区/11.png" alt=""><p>严选推荐馆</p></li>
-								
-							</ul>
-						</div></li>
-						<li><a href="#">为你严选</a></li>
-						<li><a href="#">众筹</a></li>
-					</ul>
-				</div>
-				</div>
-			</nav>
+					</div>
 		</header>
+				<nav>
+					<div class="nav-wrapper">
+						<ul class="nav-ul">
+							<li><a href="#">首页</a></li>
+							<li><a href="#">居家</a>
+								<div class="ul-wrapper fadeIn">
+									<ul>
+										<li><img src="./images/nav/nav-居家/jujia1.png" alt=""><p>夏凉</p></li>
+										<li><img src="./images/nav/nav-居家/jujia2.png" alt=""><p>床品件套</p></li>
+										<li><img src="./images/nav/nav-居家/jujia3.png" alt=""><p>被枕</p></li>
+										<li><img src="./images/nav/nav-居家/jujia4.png" alt=""><p>家具</p></li>
+										<li><img src="./images/nav/nav-居家/jujia5.png" alt=""><p>灯具</p></li>
+										<li><img src="./images/nav/nav-居家/jujia6.png" alt=""><p>收纳</p></li>
+										<li><img src="./images/nav/nav-居家/jujia7.png" alt=""><p>布艺软装</p></li>
+										<li><img src="./images/nav/nav-居家/jujia8.png" alt=""><p>家饰</p></li>
+										<li><img src="./images/nav/nav-居家/jujia9.png" alt=""><p>旅行用品</p></li>
+										<li><img src="./images/nav/nav-居家/jujia10.png" alt=""><p>晾晒除味</p></li>
+										<li><img src="./images/nav/nav-居家/jujia11.png" alt=""><p>家庭医疗</p></li>
+										<li><img src="./images/nav/nav-居家/jujia12.png" alt=""><p>宠物</p></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">鞋包配饰</a>
+								<div class="ul-wrapper fadeIn">
+									<ul>
+										<li><img src="./images/nav/nav-鞋包/xiebao1.png" alt=""><p>行李箱</p></li>
+										<li><img src="./images/nav/nav-鞋包/xiebao2.png" alt=""><p>女式包袋</p></li><li><img src="./images/nav/nav-鞋包/xiebao3.png" alt=""><p>男式包袋</p></li><li><img src="./images/nav/nav-鞋包/xiebao4.png" alt=""><p>钱包及小皮件</p></li><li><img src="./images/nav/nav-鞋包/xiebao5.png" alt=""><p>女鞋</p></li><li><img src="./images/nav/nav-鞋包/xiebao6.png" alt=""><p>男鞋</p></li><li><img src="./images/nav/nav-鞋包/xiebao7.png" alt=""><p>拖鞋</p></li><li><img src="./images/nav/nav-鞋包/xiebao8.png" alt=""><p>鞋配</p></li><li><img src="./images/nav/nav-鞋包/xiebao9.png" alt=""><p>袜子</p></li><li><img src="./images/nav/nav-鞋包/xiebao10.png" alt=""><p>丝袜</p></li><li><img src="./images/nav/nav-鞋包/xiebao11.png" alt=""><p>配饰</p></li><li><img src="./images/nav/nav-鞋包/xiebao12.png" alt=""><p>眼镜</p></li><li><img src="./images/nav/nav-鞋包/xiebao13.png" alt=""><p>围巾件套</p></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">服装</a>
+								<div class="ul-wrapper fadeIn">
+									<ul>
+										<li><img src="./images/nav/nav-服装/fuzhuang1.png" alt=""><p>Yessing轻运动</p></li><li><img src="./images/nav/nav-服装/fuzhuang2.png" alt=""><p>T恤</p></li><li><img src="./images/nav/nav-服装/fuzhuang3.png" alt=""><p>运动</p></li><li><img src="./images/nav/nav-服装/fuzhuang4.png" alt=""><p>牛仔</p></li><li><img src="./images/nav/nav-服装/fuzhuang5.png" alt=""><p>女式上装</p></li><li><img src="./images/nav/nav-服装/fuzhuang6.png" alt=""><p>女式外套</p></li><li><img src="./images/nav/nav-服装/fuzhuang7.png" alt=""><p>女式下装</p></li><li><img src="./images/nav/nav-服装/fuzhuang8.png" alt=""><p>男式上装</p></li><li><img src="./images/nav/nav-服装/fuzhuang9.png" alt=""><p>男式下装</p></li><li><img src="./images/nav/nav-服装/fuzhuang10.png" alt=""><p>男式外套</p></li><li><img src="./images/nav/nav-服装/fuzhuang11.png" alt=""><p>男士内衣内裤</p></li><li><img src="./images/nav/nav-服装/fuzhuang12.png" alt=""><p>女士内衣内裤</p></li><li><img src="./images/nav/nav-服装/fuzhuang13.png" alt=""><p>男式家居服</p></li><li><img src="./images/nav/nav-服装/fuzhuang14.png" alt=""><p>女式家居服</p></li>
+
+									</ul>
+								</div></li>
+							<li><a href="#">电器</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-电器/dianqi1.png" alt=""><p>生活电器</p></li><li><img src="./images/nav/nav-电器/dianqi2.png" alt=""><p>厨房电器</p></li><li><img src="./images/nav/nav-电器/dianqi3.png" alt=""><p>个护健康</p></li><li><img src="./images/nav/nav-电器/dianqi4 .png" alt=""><p>数码</p></li><li><img src="./images/nav/nav-电器/dianqi5.png" alt=""><p>影音娱乐</p></li>
+										</ul>
+									</div></li>
+							<li><a href="#">洗护</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-洗护/xihu1.png" alt=""><p>纸品湿巾</p></li><li><img src="./images/nav/nav-洗护/xihu2.png" alt=""><p>家庭清洁</p></li><li><img src="./images/nav/nav-洗护/xihu3.png" alt=""><p>生理用品</p></li><li><img src="./images/nav/nav-洗护/xihu4.png" alt=""><p>浴室用具</p></li><li><img src="./images/nav/nav-洗护/xihu5.png" alt=""><p>毛巾</p></li><li><img src="./images/nav/nav-洗护/xihu6.png" alt=""><p>美妆</p></li><li><img src="./images/nav/nav-洗护/xihu7.png" alt=""><p>香氛</p></li><li><img src="./images/nav/nav-洗护/xihu8.png" alt=""><p>面部口腔护理</p></li><li><img src="./images/nav/nav-洗护/xihu9.png" alt=""><p>身体护理</p></li><li><img src="./images/nav/nav-洗护/xihu10.png" alt=""><p>洗发护发</p></li>
+										</ul>
+									</div></li>
+							<li><a href="#">饮食</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-饮食/1.png" alt=""><p>甜品鲜花</p></li><li><img src="./images/nav/nav-饮食/2.png" alt=""><p>糕点</p></li><li><img src="./images/nav/nav-饮食/3.png" alt=""><p>小食</p></li><li><img src="./images/nav/nav-饮食/4.png" alt=""><p>坚果炒货</p></li><li><img src="./images/nav/nav-饮食/5.png" alt=""><p>果干</p></li><li><img src="./images/nav/nav-饮食/6.png" alt=""><p>肉类零食</p></li><li><img src="./images/nav/nav-饮食/7.png" alt=""><p>冲饮</p></li><li><img src="./images/nav/nav-饮食/8.png" alt=""><p>茗茶</p></li><li><img src="./images/nav/nav-饮食/9.png" alt=""><p>酒水饮料</p></li><li><img src="./images/nav/nav-饮食/10.png" alt=""><p>方便食品</p></li><li><img src="./images/nav/nav-饮食/11.png" alt=""><p>食材</p></li><li><img src="./images/nav/nav-饮食/12.png" alt=""><p>调味</p></li><li><img src="./images/nav/nav-饮食/13.png" alt=""><p>滋补保健</p></li><li><img src="./images/nav/nav-饮食/14.png" alt=""><p>生鲜</p></li>
+
+										</ul>
+									</div></li>
+							<li><a href="#">餐厨</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-餐厨/1.png" alt=""><p>水具杯壶</p></li><li><img src="./images/nav/nav-餐厨/2.png" alt=""><p>餐具</p></li><li><img src="./images/nav/nav-餐厨/3.png" alt=""><p>锅具</p></li><li><img src="./images/nav/nav-餐厨/4.png" alt=""><p>清洁保鲜</p></li><li><img src="./images/nav/nav-餐厨/5.png" alt=""><p>厨房配件</p></li><li><img src="./images/nav/nav-餐厨/6.png" alt=""><p>刀剪砧板</p></li><li><img src="./images/nav/nav-餐厨/7.png" alt=""><p>茶具咖啡具酒具</p></li>
+
+										</ul>
+									</div></li>
+							<li><a href="#">婴童</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-婴童/1.png" alt=""><p>暑期好物</p></li><li><img src="./images/nav/nav-婴童/2.png" alt=""><p>新生儿服装</p></li><li><img src="./images/nav/nav-婴童/3.png" alt=""><p>小童服装</p></li><li><img src="./images/nav/nav-婴童/4.png" alt=""><p>中大童服装</p></li><li><img src="./images/nav/nav-婴童/5.png" alt=""><p>内衣搭配</p></li><li><img src="./images/nav/nav-婴童/6.png" alt=""><p>童鞋童包</p></li><li><img src="./images/nav/nav-婴童/7.png" alt=""><p>婴童洗护</p></li><li><img src="./images/nav/nav-婴童/8.png" alt=""><p>孕产</p></li><li><img src="./images/nav/nav-婴童/9.png" alt=""><p>寝居</p></li><li><img src="./images/nav/nav-婴童/10.png" alt=""><p>喂养</p></li><li><img src="./images/nav/nav-婴童/11.png" alt=""><p>玩具</p></li><li><img src="./images/nav/nav-婴童/12.png" alt=""><p>婴童出行</p></li>
+
+										</ul>
+									</div></li>
+							<li><a href="#">文体</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-文体/1.png" alt=""><p>文具</p></li><li><img src="./images/nav/nav-文体/2.png" alt=""><p>运动户外</p></li><li><img src="./images/nav/nav-文体/3.png" alt=""><p>唱片</p></li><li><img src="./images/nav/nav-文体/4.png" alt=""><p>礼品卡</p></li><li><img src="./images/nav/nav-文体/5.png" alt=""><p>游戏点卡</p></li><li><img src="./images/nav/nav-文体/6.png" alt=""><p>暴雪周边</p></li><li><img src="./images/nav/nav-文体/7.png" alt=""><p>我的世界</p></li><li><img src="./images/nav/nav-文体/8.png" alt=""><p>梦幻西游</p></li><li><img src="./images/nav/nav-文体/9.png" alt=""><p>大话西游</p></li><li><img src="./images/nav/nav-文体/10.png" alt=""><p>阴阳师</p></li><li><img src="./images/nav/nav-文体/11.png" alt=""><p>游戏表情</p></li><li><img src="./images/nav/nav-文体/12.png" alt=""><p>影视周边</p></li><li><img src="./images/nav/nav-文体/13.png" alt=""><p>动漫电玩</p></li>
+
+										</ul>
+									</div></li>
+							<li><a href="#">特色区</a>
+									<div class="ul-wrapper fadeIn">
+										<ul>
+											<li><img src="./images/nav/nav-特色区/1.png" alt=""><p>日本馆</p></li><li><img src="./images/nav/nav-特色区/2.png" alt=""><p>韩国馆</p></li><li><img src="./images/nav/nav-特色区/3.png" alt=""><p>东南亚馆</p></li><li><img src="./images/nav/nav-特色区/4.png" alt=""><p>欧美馆</p></li><li><img src="./images/nav/nav-特色区/5.png" alt=""><p>澳新馆</p></li><li><img src="./images/nav/nav-特色区/6.png" alt=""><p>智造馆</p></li><li><img src="./images/nav/nav-特色区/7.png" alt=""><p>春风馆</p></li><li><img src="./images/nav/nav-特色区/8.png" alt=""><p>未央馆</p></li><li><img src="./images/nav/nav-特色区/9.png" alt=""><p>云音乐周边馆</p></li><li><img src="./images/nav/nav-特色区/10.png" alt=""><p>Yessing馆</p></li><li><img src="./images/nav/nav-特色区/11.png" alt=""><p>严选推荐馆</p></li>
+
+										</ul>
+									</div></li>
+							<li><a href="#">为你严选</a></li>
+							<li><a href="#">众筹</a></li>
+						</ul>
+					</div>
+				</nav>
 		<!-- 内容区 -->
 		<div class="container">
 			<div class="detial">
 				<div class="detial-wrapper">
 					<div class="nav-txt">
-					<span>首页</span>
-					<i class="fa fa-angle-right"></i>
-					<span>电器</span>
-					<i class="fa fa-angle-right"></i>
-					<span>个护健康</span>
-					<i class="fa fa-angle-right"></i>
-					<span>网易智造日式无线按摩靠枕</span>
+						<span>首页</span>
+						<i class="fa fa-angle-right"></i>
+						<span>电器</span>
+						<i class="fa fa-angle-right"></i>
+						<span>个护健康</span>
+						<i class="fa fa-angle-right"></i>
+						<span>网易智造日式无线按摩靠枕</span>
 					</div>
 					<!-- 商品购买区 -->
 					<div class="shop">
 						<div class="shop-left">
 						<!-- <div class="b-i">
 						<img src="./images/buy/banner1/banner1-01.png" alt="">
-						</div> -->
-						<ul>
-							<li><img src="./images/buy/banner1/banner1-10.png" alt="">
-								<div class="large-img">
-									<img src="./images/buy/banner1/banner1-01.png" alt="">
-								</div>
-							</li>
-							<li><img src="./images/buy/banner1/banner1-20.jpg" alt="">
+					</div> -->
+					<ul>
+						<li><img src="./images/buy/banner1/banner1-10.png" alt="">
 							<div class="large-img">
-									<img src="./images/buy/banner1/banner1-02.jpg" alt="">
-								</div></li>
+								<img src="./images/buy/banner1/banner1-01.png" alt="">
+							</div>
+						</li>
+						<li><img src="./images/buy/banner1/banner1-20.jpg" alt="">
+							<div class="large-img">
+								<img src="./images/buy/banner1/banner1-02.jpg" alt="">
+							</div></li>
 							<li><img src="./images/buy/banner1/banner1-30.jpg" alt=""><div class="large-img">
-									<img src="./images/buy/banner1/banner1-03.jpg" alt="">
-								</div></li>
+								<img src="./images/buy/banner1/banner1-03.jpg" alt="">
+							</div></li>
 							<li><img src="./images/buy/banner1/banner1-40.jpg" alt=""><div class="large-img">
-									<img src="./images/buy/banner1/banner1-04.jpg" alt="">
-								</div></li>
+								<img src="./images/buy/banner1/banner1-04.jpg" alt="">
+							</div></li>
 							<li><img src="./images/buy/banner1/banner1-50.jpg" alt="">
-							<div class="large-img">
+								<div class="large-img">
 									<img src="./images/buy/banner1/banner1-05.jpg" alt="">
 								</div></li>
-						</ul>
+							</ul>
 						</div>
 						<div class="shop-right">
 							<div class="text">
@@ -254,221 +252,217 @@
 							<div class="grey">
 								<p><span>价格</span>
 									<span>¥369</span></p>
-								<p><span>领券</span>
-									<span>七夕每满177减27</span>
-									<span>七夕每满477减77</span>
-									<span>七夕每满777减117</span>
-								<span>立即领取</span>	
-								</p>
-								<p><span>促销</span>	
-									<span>满折</span>
-									<span>满2件享9折</span></p>
-								<p><span>积分</span>	
-									<span>购买最高得36积分</span>
+									<p><span>领券</span>
+										<span>七夕每满177减27</span>
+										<span>七夕每满477减77</span>
+										<span>七夕每满777减117</span>
+										<span>立即领取</span>	
 									</p>
-									<div class="dashed"></div>
-									<p><span>服务</span><span>· 支持30天无忧退换货</span><span>· 48小时快速退款</span><span>· 满88元免邮费</span></p>
-									<p><span>· 网易自营品牌</span><span>· 国内部分地区无法配送</span></p>
+									<p><span>促销</span>	
+										<span>满折</span>
+										<span>满2件享9折</span></p>
+										<p><span>积分</span>	
+											<span>购买最高得36积分</span>
+										</p>
+										<div class="dashed"></div>
+										<p><span>服务</span><span>· 支持30天无忧退换货</span><span>· 48小时快速退款</span><span>· 满88元免邮费</span></p>
+										<p><span>· 网易自营品牌</span><span>· 国内部分地区无法配送</span></p>
 							</div>
-							<div class="color">
-								<span>颜色</span>
-								<ul>
-									<li><img src="./images/buy/banner1/banner1-70.png" alt=""></li>
-									<li><img src="./images/buy/banner1/banner1-60.png" alt=""></li>
-									<li><img src="./images/buy/banner1/banner1-70.png" alt=""></li>
-								</ul>
-							</div>
-							<div class="count">
-								<span>数量</span>
-								<input type="text" value="1">
-							</div>
-							<div class="btn">
-							<div class="buy-btn">
-								立即购买
-							</div>
-							<div class="cart-btn">
-								加入购物车
-							</div>
-							<div class="sc-btn">
-								<i class="fa fa-star-o"></i>
-								<p>收藏</p>
-							</div>
-							</div>
+									<div class="color">
+										<span>颜色</span>
+										<ul>
+											<li><img src="./images/buy/banner1/banner1-70.png" alt=""></li>
+											<li><img src="./images/buy/banner1/banner1-60.png" alt=""></li>
+											<li><img src="./images/buy/banner1/banner1-70.png" alt=""></li>
+										</ul>
+									</div>
+									<div class="count">
+										<span>数量</span>
+										<input type="text" value="1">
+									</div>
+								<div class="btn">
+									<div class="buy-btn">
+										立即购买
+									</div>
+									<div class="cart-btn">
+										加入购物车
+									</div>
+									<div class="sc-btn"><i class="fa fa-star-o"></i><p>收藏</p></div>
+								</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="looking">
-				<p>大家都在看</p>
-				<ul>
-					<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-01.png" alt=""></div>
-					<h3>网易智造3D揉捏按肩带</h3>
-					<h4>¥449</h4>
-					</li>
-					<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-02.png" alt=""></div>
-					<h3>头部按摩仪</h3>
-					<h4>¥229</h4></li>
-					<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-03.png" alt=""></div>
-					<h3>微电流滚轮身体按摩仪</h3>
-					<h4>¥189</h4></li>
-					<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-04.png" alt=""></div>
-					<h3>丝瓜络长柄沐浴刷</h3>
-					<h4>¥19.9</h4></li>
-				</ul>
-			</div>
-			<div class="showing">
-				<div class="showing-left">
-					<div class="top">
-						<span>详情</span>
-						<span>评价(1696)</span>
-						<span>常见问题</span>
+					<div class="looking">
+						<p>大家都在看</p>
+						<ul>
+							<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-01.png" alt=""></div>
+								<h3>网易智造3D揉捏按肩带</h3>
+								<h4>¥449</h4>
+							</li>
+							<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-02.png" alt=""></div>
+								<h3>头部按摩仪</h3>
+								<h4>¥229</h4></li>
+								<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-03.png" alt=""></div>
+									<h3>微电流滚轮身体按摩仪</h3>
+									<h4>¥189</h4></li>
+									<li><div class="img-wrap"><img src="./images/buy/banner2/banner2-04.png" alt=""></div>
+										<h3>丝瓜络长柄沐浴刷</h3>
+										<h4>¥19.9</h4></li>
+									</ul>
 					</div>
-					<div class="center">
-					<p><span>输入电压</span>
-						<span>AC 100-240V~50/60Hz</span>
-						<span>额定功率</span>
-						<span>23.8W</span></p>
-						<p><span>定时时间</span>
-						<span>15分钟</span>
-						<span>产品尺寸</span>
-						<span>31.5*31.5*14.5cm</span></p>
-						<p><span>产品重量</span>
-						<span>2.2±0.2kg</span>
-						<span>产品颜色</span>
-						<span>香米白、珊瑚粉、靛海蓝</span></p>
-						<p><span>电池容量</span>
-						<span>2500mah</span>
-						<span>电源线长</span>
-						<span>1.8m</span></p>
-						<p><span>不适宜使用人群</span>
-						<span>*正在接受医生治疗者或身体感觉不适者</span><br>
-						<span>*高血压、心脏病、脑动脉硬化、脑血栓患者</span>
-						<br>
-						<span>*患有恶性肿瘤者</span>
-						<br>
-						<span>*孕妇及月经期妇女</span>
-						<br>
-						<span>*患有骨骼疏松症</span>
-						<br>
-						<span>*正在适用心脏起搏器或者植入医疗器者</span>
-						<br>
-						<span>*患有急性疾病者</span>
-						<br>
-						<span>*未成年人及身心功能障碍者</span>
-						</p>
-						<p><span>售后服务及保修</span>
-						<span>该产品自售出之日起，因生产厂家质量原因所引起的故障，30日内包退换，1年内主机保修。</span></p>
-						<img src="./images/buy/long/long.png" alt="">
-						<img src="./images/buy/long/1.png" alt="">
-
+					<div class="showing">
+						<div class="showing-left">
+							<div class="top">
+								<span>详情</span>
+								<span>评价(1696)</span>
+								<span>常见问题</span>
+							</div>
+							<div class="center">
+								<p><span>输入电压</span>
+									<span>AC 100-240V~50/60Hz</span>
+									<span>额定功率</span>
+									<span>23.8W</span></p>
+									<p><span>定时时间</span>
+										<span>15分钟</span>
+										<span>产品尺寸</span>
+										<span>31.5*31.5*14.5cm</span></p>
+									<p><span>产品重量</span>
+										<span>2.2±0.2kg</span>
+										<span>产品颜色</span>
+										<span>香米白、珊瑚粉、靛海蓝</span></p>
+									<p><span>电池容量</span>
+										<span>2500mah</span>
+										<span>电源线长</span>
+										<span>1.8m</span></p>
+									<p><span>不适宜使用人群</span>
+										<span>*正在接受医生治疗者或身体感觉不适者</span><br>
+										<span>*高血压、心脏病、脑动脉硬化、脑血栓患者</span>
+										<br>
+										<span>*患有恶性肿瘤者</span>
+										<br>
+										<span>*孕妇及月经期妇女</span>
+										<br>
+										<span>*患有骨骼疏松症</span>
+										<br>
+										<span>*正在适用心脏起搏器或者植入医疗器者</span>
+										<br>
+										<span>*患有急性疾病者</span>
+										<br>
+										<span>*未成年人及身心功能障碍者</span>
+									</p>
+									<p><span>售后服务及保修</span>
+										<span>该产品自售出之日起，因生产厂家质量原因所引起的故障，30日内包退换，1年内主机保修。</span></p>
+										<img src="./images/buy/long/long.png" alt="">
+										<img src="./images/buy/long/1.png" alt="">
+								</div>
 						</div>
+						<div class="showing-right">
+							<h3>24小时热销榜</h3>
+							<ul class="first">
+								<li><img src="./images/buy/banner3/1.png" alt=""><p>玩趣彩虹四季拖鞋</p><span>¥19.9</span></li>
+								<li><img src="./images/buy/banner3/2.png" alt=""><p>严选礼品卡 100元面值</p><span>¥100</span></li>
+								<li><img src="./images/buy/banner3/3.png" alt=""><p>鲜果冻 180克(6粒入)</p><span>¥14</span></li>
+								<li><img src="./images/buy/banner3/4.png" alt=""><p>谷风一木 小卷纸</p><span>¥27.9</span></li>
+								<li><img src="./images/buy/banner3/5.png" alt=""><p>雪芙蛋糕</p><span>¥9.9</span></li>
+								<li><img src="./images/buy/banner3/6.png" alt=""><p>婴幼儿手口湿巾 80片</p><span>¥9.9</span></li>
+							</ul>
+							<h3>专题推荐</h3>
+							<ul class="second">
+								<li><a href="#"><img src="./images/buy/banner4/1.jpg" alt=""><span>把ins上爆红的"超级食物"放进麦片里</span></a></li>
+								<li><a href="#"><img src="./images/buy/banner4/2.jpg" alt=""><span>提升魅力，约会前就靠这些他们</span></a></li>
+								<li><a href="#"><a href="#"><img src="./images/buy/banner4/3.jpg" alt=""></a><span>减肥也要减得身心愉快</span></a></li><li><a href="#"><img src="./images/buy/banner4/4.jpg" alt=""><span>这些好奇新物，看了会说"哇！"</span></a></li><li><a href="#"><img src="./images/buy/banner4/5.jpg" alt=""><span>立秋贴求膘，广式汤料包</span></a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<!-- 严选底部 -->
+					<div class="yanxuan">
+						<div class="yanxuan-wrapper">
+							<ul>
+								<li>
+									<p>客户服务</p>
+									<div class="kefu">
+										<i class="iconfont icon-kefu"></i><br>
+										<span>在线客服</span>
+									</div>
+									<div class="yh">
+										<i class="iconfont icon-pinglun"></i><br>
+										<span>用户反馈</span>
+									</div>
+								</li>
+								<li>
+									<p>何为严选</p>
+									<br>
+									<div class="wytx">
+										网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品
+									</div>
+									<div class="gzwm">
+										关注我们：
+										<i class="iconfont icon-yixin"></i>
+										<i class="iconfont icon-weixin"></i>
+										<i class="iconfont icon-weibo"></i>
+									</div>
+								</li>
+								<li>
+									<p>扫码下载严选APP</p>
+									<img src="./images/qcode.png" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="showing-right">
-					<h3>24小时热销榜</h3>
-					<ul class="first">
-						<li><img src="./images/buy/banner3/1.png" alt=""><p>玩趣彩虹四季拖鞋</p><span>¥19.9</span></li>
-						<li><img src="./images/buy/banner3/2.png" alt=""><p>严选礼品卡 100元面值</p><span>¥100</span></li>
-						<li><img src="./images/buy/banner3/3.png" alt=""><p>鲜果冻 180克(6粒入)</p><span>¥14</span></li>
-						<li><img src="./images/buy/banner3/4.png" alt=""><p>谷风一木 小卷纸</p><span>¥27.9</span></li>
-						<li><img src="./images/buy/banner3/5.png" alt=""><p>雪芙蛋糕</p><span>¥9.9</span></li>
-						<li><img src="./images/buy/banner3/6.png" alt=""><p>婴幼儿手口湿巾 80片</p><span>¥9.9</span></li>
-					</ul>
-					<h3>专题推荐</h3>
-					<ul class="second">
-						<li><a href="#"><img src="./images/buy/banner4/1.jpg" alt=""><span>把ins上爆红的"超级食物"放进麦片里</span></a></li>
-						<li><a href="#"><img src="./images/buy/banner4/2.jpg" alt=""><span>提升魅力，约会前就靠这些他们</span></a></li>
-						<li><a href="#"><a href="#"><img src="./images/buy/banner4/3.jpg" alt=""></a><span>减肥也要减得身心愉快</span></a></li><li><a href="#"><img src="./images/buy/banner4/4.jpg" alt=""><span>这些好奇新物，看了会说"哇！"</span></a></li><li><a href="#"><img src="./images/buy/banner4/5.jpg" alt=""><span>立秋贴求膘，广式汤料包</span></a></li>
-						
-					</ul>
+				<!-- 页面底部 -->
+				<footer>
+					<div class="footer-wrapper">
+						<ul class="footer-ul">
+							<li>
+								<i class="iconfont icon-anquanbaozhangx"></i>
+								<span>30天无忧退换货</span>
+							</li>
+							<li>
+								<i class="iconfont icon-quanguobaoyou"></i>
+								<span>满88元免邮费</span>
+							</li>
+							<li>
+								<i class="iconfont icon-wangyi"></i>
+								<span>网易品质保证</span>
+							</li>
+						</ul>
+						<ul class="bottom-ul">
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">配送与验证</a></li>
+							<li><a href="#">商务合作</a></li>
+							<li><a href="#">企业采购</a></li>
+							<li><a href="#">开放平台</a></li>
+							<li><a href="#">搜索推荐</a></li>
+							<li><a href="#">友情链接</a></li>
+						</ul>
+						<span>网易公司版权所有 &copy 1997-2018   食品经营许可证：JY13301080111719 出版物经营许可证：新出发滨字第0132号 单用途商业预付卡备案证：330100AAC0024</span>
+						<img src="./images/beian.jpg" alt="">
+					</div>
+				</footer>
+				<!-- fixed广告 -->
+				<div class="fixed">
+					<div class="fixed-wrapper">
+						<img src="./images/fixed.gif" alt="">
+						<div class="qcode">
+							<img src="./images/canvas.png" alt="">
+							<p>扫码领</p>
+							<span>APP1000元<br>新人礼</span>
+						</div>
+						<div class="dzk">
+							<i class="iconfont icon-icon-wifi"></i>
+							<p>订阅电子刊</p>
+						</div>
+						<div class="kf">
+							<i class="iconfont icon-kefu"></i>
+							<p>在线客服</p>
+						</div>
+					</div>
 				</div>
 			</div>
-						<!-- 严选底部 -->
-			<div class="yanxuan">
-				<div class="yanxuan-wrapper">
-					<ul>
-						<li>
-							<p>客户服务</p>
-							<div class="kefu">
-								<i class="iconfont icon-kefu"></i><br>
-								<span>在线客服</span>
-							</div>
-							<div class="yh">
-								<i class="iconfont icon-pinglun"></i><br>
-								<span>用户反馈</span>
-							</div>
-						</li>
-						<li>
-							<p>何为严选</p>
-							<br>
-							<div class="wytx">
-							网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品
-							</div>
-							<div class="gzwm">
-								关注我们：
-								<i class="iconfont icon-yixin"></i>
-								<i class="iconfont icon-weixin"></i>
-								<i class="iconfont icon-weibo"></i>
-							</div>
-						</li>
-						<li>
-							<p>扫码下载严选APP</p>
-							<img src="./images/qcode.png" alt="">
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- 页面底部 -->
-		<footer>
-			<div class="footer-wrapper">
-				<ul class="footer-ul">
-					<li>
-						<i class="iconfont icon-anquanbaozhangx"></i>
-						<span>30天无忧退换货</span>
-					</li>
-					<li>
-						<i class="iconfont icon-quanguobaoyou"></i>
-						<span>满88元免邮费</span>
-					</li>
-					<li>
-						<i class="iconfont icon-wangyi"></i>
-						<span>网易品质保证</span>
-					</li>
-				</ul>
-				<ul class="bottom-ul">
-					<li><a href="#">关于我们</a></li>
-					<li><a href="#">帮助中心</a></li>
-					<li><a href="#">售后服务</a></li>
-					<li><a href="#">配送与验证</a></li>
-					<li><a href="#">商务合作</a></li>
-					<li><a href="#">企业采购</a></li>
-					<li><a href="#">开放平台</a></li>
-					<li><a href="#">搜索推荐</a></li>
-					<li><a href="#">友情链接</a></li>
-				</ul>
-				<span>网易公司版权所有 &copy 1997-2018   食品经营许可证：JY13301080111719 出版物经营许可证：新出发滨字第0132号 单用途商业预付卡备案证：330100AAC0024</span>
-				<img src="./images/beian.jpg" alt="">
-			</div>
-		</footer>
-		<!-- fixed广告 -->
-		<div class="fixed">
-			<div class="fixed-wrapper">
-			<img src="./images/fixed.gif" alt="">
-			<div class="qcode">
-			<img src="./images/canvas.png" alt="">
-			<p>扫码领</p>
-			<span>APP1000元<br>新人礼</span>
-			</div>
-			<div class="dzk">
-				<i class="iconfont icon-icon-wifi"></i>
-				<p>订阅电子刊</p>
-			</div>
-			<div class="kf">
-				<i class="iconfont icon-kefu"></i>
-				<p>在线客服</p>
-			</div>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+		</body>
+		</html>

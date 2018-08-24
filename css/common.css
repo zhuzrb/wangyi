@@ -12,3 +12,6 @@ a{
 	text-decoration: none;
 	color: #ccc;
 }
+#page{
+	min-width:1263px;
+}

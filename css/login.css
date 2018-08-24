@@ -1,16 +1,12 @@
 
 /*头部样式*/
-header{
-	width: 100%; 
+header .login-box{
+	background-color: #333;
+	line-height: 36px;
 }
-header .login-wrapper{
-	width: 100%;
-	background-color: #333333;
-}
-header .login{
+header .login,header .login-wrapper{
 	width: 1090px;
 	margin: 0 auto;
-	line-height: 36px;	
 }
 .login-left{
 	color: #cccccc;
@@ -41,21 +37,28 @@ header .login{
 	position: relative;
 	z-index: 999;
 }
+.login-right .first-ul > li:nth-child(1){
+	margin-right: 10px;
+}
+.login-right .first-ul li:nth-child(1):before,
+.login-right .first-ul li:nth-child(2):before{
+	display: none;
+}
 .login-right .first-ul > li:before{
 	content: '';
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
 	height: 16px;
 	border-left: 1px solid #5c5c5c;
 	vertical-align: middle;
 }
-.login-right li:nth-child(5):hover .small-ul{
+.login-right li:nth-child(7):hover .small-ul{
 	display: block;
 }
 .fz{
 	display: inline-block;
 }
-.login-right li:nth-child(5):hover .fz{
+.login-right li:nth-child(7):hover .fz{
 	transform: rotate(180deg);
 }
  @keyframes faded {
@@ -89,10 +92,10 @@ header .login{
 	color: #b4a078;
 	cursor: pointer;
 }
-.login-right li:nth-child(6):hover .qcode{
+.login-right li:nth-child(8):hover .qcode{
 	display: block;
 }
-.login-right li:nth-child(6) .qcode{
+.login-right li:nth-child(8) .qcode{
 	background-color: #fff;
 	position: absolute;
 	right: -40px;
@@ -111,16 +114,7 @@ header .login{
 .icon-phone{
 	color: #fff;
 }
-
-nav{
-	width: 100%;
-}
-nav .nav-wrapper{
-	width: 1090px;
-	margin: 0 auto;
-	height: 204px;
-}
-nav .logo img{
+.login-wrapper .logo img{
 	width: 250px;
 	height: 100px;
 	position: relative;
@@ -129,17 +123,17 @@ nav .logo img{
 	margin-left: -125px;
 	margin-top: 40px; 
 }
-nav .logo a:hover{
+.login-wrapper .logo a:hover{
 	cursor: pointer;
 }
-nav .search{
+.login-wrapper .search{
 	width: 320px;
 	position: relative;
-	left: 755px;
+	left: 750px;
 	top: -60px;
-	z-index: -1;
+	z-index: auto;
 }
-nav .search input{
+.login-wrapper .search input{
 	display: block;
 	height: 22px;
 	line-height: 22px;
@@ -153,7 +147,7 @@ nav .search input{
 	outline: 0;
 	overflow: hidden;
 }
-nav .search i{
+.login-wrapper .search i{
 	position: relative;
 	left: 249px;
 	bottom: 30px;
@@ -161,13 +155,28 @@ nav .search i{
 	font-size: 20px;
 	color: #c6b698;
 }
-nav .search i:last-child{
+.login-wrapper .search i:last-child{
 	font-size: 24px;
 }
-nav .search i:hover{
+.login-wrapper .search i:hover{
 	cursor: pointer;
 	color: #b4a078;
 }
+nav{
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: #fff;
+	box-shadow: 0px 2px 3px rgba(0,0,0,.1)
+}
+nav .nav-wrapper{
+	width: 1090px;
+	margin: 0 auto;
+	height: 60px;
+	line-height: 60px;
+}
+
 .nav-ul{
 	width: 1090px;
 	margin-left: 23px;
@@ -176,7 +185,7 @@ nav .search i:hover{
 	justify-content: flex-start;
 }
 .nav-ul > li{
-	padding-right: 48px;
+	margin-right: 48px;
 }
 .nav-ul li a{
 	color: #000;
@@ -185,6 +194,10 @@ nav .search i:hover{
 	padding-bottom: 5px;
 }
 .nav-ul li a:hover{
+	color: #b4a078;
+	border-bottom: 3px solid #b4a078;
+}
+.nav-ul li:first-of-type a{
 	color: #b4a078;
 	border-bottom: 3px solid #b4a078;
 }
@@ -202,7 +215,7 @@ nav .search i:hover{
 .nav-ul > li:hover .ul-wrapper{
 	display: block;
 	position: absolute;
-	top: 220px;
+	top: 60px;
 	left: 0;
 	right: 0;
 	z-index: 900;
@@ -246,7 +259,7 @@ nav .search i:hover{
 	position: absolute;
 	left: 60%;
 	top: 280px;
-	z-index: 999;
+	z-index: 998;
 }
 /*登录框文字*/
 .top-text{
